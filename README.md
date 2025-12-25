@@ -131,7 +131,8 @@ quickly. In this situation, it is recommended that you set the `delete_history` 
 `true`. This will overwrite the Git _history_ in the repository, but
 keep all the _content_. If you are using the repository for more than
 just the Zulip archive (not recommended), you may want to set the `delete_history` flag to `false`, but be
-warned that the repository size may explode.
+warned that the repository size may explode (this can be somewhat ameliorated by
+periodically running `git repack -a -d`).
 
 ### Step 7 - Verify that everything works
 
